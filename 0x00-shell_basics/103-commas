@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1a --group-directories-first | sed ':a;N;$!ba;s/\n/, /g; s/\([^\/]\)$/\1\//'
