@@ -1,4 +1,2 @@
 #!/bin/bash
-input=$(cat)
-output=$(echo "$input" | tr 'Ac' 'Ze')
-echo "$output"
+sed -e 's/A/Z/g' -e 's/c/e/g'
