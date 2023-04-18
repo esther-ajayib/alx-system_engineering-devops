@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -e '$p' iacta | tee -a iacta >/dev/null
+tail -n1 iacta | tee -a iacta >/dev/null
