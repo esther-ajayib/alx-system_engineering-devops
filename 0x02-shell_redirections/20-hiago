@@ -1,0 +1,4 @@
+#!/bin/bash
+input=$(cat)
+output=$(echo "$input" | tr -d 'cC')
+echo "$output"
