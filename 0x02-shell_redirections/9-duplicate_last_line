@@ -1,5 +1,2 @@
 #!/bin/bash
-IFS=$'\n' read -d '' -r -a content < iacta
-last_line=${content[-1]}
-content+=("$last_line")
-printf '%s\n' "${content[@]}" > iacta
+sed -e '$p' iacta | tee -a iacta >/dev/null
