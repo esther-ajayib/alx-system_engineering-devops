@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$DECIMAL" | bc -l | tr '[:upper:]' '[:lower:]' | xargs printf '%.0f\n' | xargs printf '%x\n'
+printf '%x\n' "$DECIMAL"
