@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ $# -eq 0 ]; then input=$(cat); else input=$@; fi; echo "$input" | tr -d 'cC'
+tr -d 'cC'
