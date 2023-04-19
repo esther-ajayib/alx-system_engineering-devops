@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{count[$0]++} END {for (list in count) if (count[list] == 1) print list}' | sort
+cat list | tr ' ' '\n' | sort | uniq -u
