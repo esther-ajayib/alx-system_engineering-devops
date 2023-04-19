@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{print $1}' "https://s3.amazonaws.com/alx-intranet.hbtn.io/public/nasa_19950801.tsv" | sort | uniq -c | sort -nr | awk '{print $2}' | head -n 11
+curl -s "https://s3.amazonaws.com/alx-intranet.hbtn.io/public/nasa_19950801.tsv" | awk '{print $1}' | sort | uniq -c | sort -nr | awk '{print $2}' | head -n 11
