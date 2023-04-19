@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -cd '[:alnum:]\n' < "An Acrostic" | cut -c1 | paste -sd "" -
+tr -d ' ' | cut -c1 | paste -sd "" -
